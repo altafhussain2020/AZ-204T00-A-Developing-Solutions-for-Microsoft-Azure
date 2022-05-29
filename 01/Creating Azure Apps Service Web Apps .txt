@@ -1,0 +1,28 @@
+DefaultEndpointsProtocol=https;AccountName=imgstoraltaf2022;AccountKey=SCA1ALW+mzfjuiKadlS8LJL9FnuE444/mnxqgnmb5IGUSGFqVKPBSIND2+y+lEKHoEXvJSZFpy21+AStC1Qd8w==;EndpointSuffix=core.windows.net
+
+http://imgapialtaf2022.azurewebsites.net/
+
+ManagedPlatform-lod23747657
+
+az webapp list --resource-group ManagedPlatform-lod23747657
+
+--API
+az webapp list --resource-group ManagedPlatform-lod23747657 --query "[?starts_with(name, 'imgapi')]"
+
+--WEB
+az webapp list --resource-group ManagedPlatform-lod23747657 --query "[?starts_with(name, 'imgweb')]"
+
+--API
+az webapp list --resource-group ManagedPlatform-lod23747657 --query "[?starts_with(name, 'imgapi')].{Name:name}" --output tsv
+
+--WEB
+az webapp list --resource-group ManagedPlatform-lod23747657 --query "[?starts_with(name, 'imgweb')].{Name:name}" --output tsv
+
+--API
+az webapp deployment source config-zip --resource-group ManagedPlatform-lod23747657 --src api.zip --name imgapialtaf2022
+
+--WEB
+az webapp deployment source config-zip --resource-group ManagedPlatform-lod23747657 --src web.zip --name imgwebaltaf2022
+
+--Clean Up
+az group delete --name ManagedPlatform-lod23747657 --no-wait --yes
