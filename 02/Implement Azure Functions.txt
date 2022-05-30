@@ -1,0 +1,16 @@
+--Copied Connection String 
+DefaultEndpointsProtocol=https;AccountName=funcstoraltaf2022;AccountKey=bKoIc4JTAz5mjCe+XdcIiFifqGLh8w4RtbcMG6UjmjcIfFvSS6SE/Bcm52XTSRz2YuErnuTdjRYG+AStUMC+XA==;EndpointSuffix=core.windows.net
+
+--Install Azure Function Core Tools in VSCode
+10:17:38 PM: Running command: "npm install -g azure-functions-core-tools@4"...
+
+--Update func.csproj 
+
+
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+   
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="4.0.4" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.13" />
+  </ItemGroup>
+  
