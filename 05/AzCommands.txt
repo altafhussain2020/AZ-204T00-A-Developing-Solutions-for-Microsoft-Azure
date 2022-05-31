@@ -1,0 +1,41 @@
+--Create VM through Commands
+az vm create --resource-group ContainerCompute-lod23789257 --name quickvm --image Debian --admin-username student --admin-password aZ@2042022aZ
+
+az vm show --resource-group ContainerCompute-lod23789257 --name quickvm
+
+az vm list-ip-addresses --resource-group ContainerCompute-lod23789257 --name quickvm
+
+az vm list-ip-addresses --resource-group ContainerCompute-lod23789257 --name quickvm --query '[].{ip:virtualMachine.network.publicIpAddresses[0].ipAddress}' --output tsv
+
+ipAddress=$(az vm list-ip-addresses --resource-group ContainerCompute-lod23789257 --name quickvm --query '[].{ip:virtualMachine.network.publicIpAddresses[0].ipAddress}' --output tsv)
+
+echo $ipAddress
+ssh student@$ipAddress
+uname -a
+exit
+
+--Create VM through Automated scripts
+cd ~/clouddrive
+mkdir ipcheck
+cd ~/clouddrive/ipcheck
+dotnet new console --output . --name ipcheck
+touch Dockerfile
+code .
+
+--Implement Program.cs
+--Implement Docker File  
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+
+registryName=conregistry$RANDOM
+az acr check-name --name $registryName
+az acr create --resource-group ContainerCompute-lod23789257 --name $registryName --sku Basic
+
+az acr list
+az acr list --query "max_by([], &creationDate).name" --output tsv
+acrName=$(az acr list --query "max_by([], &creationDate).name" --output tsv)
+echo $acrName
+
+cd ~/clouddrive/ipcheck
+dir
+az acr build --registry $acrName --image ipcheck:latest .
+
