@@ -1,0 +1,10 @@
+C:\Git\AZ-204T00-A Developing Solutions for Microsoft Azure\04\Starter\AdventureWorks\AdventureWorks.Models\bin\Debug\netstandard2.1\AdventureWorks.Models.deps.json
+C:\Git\AZ-204T00-A Developing Solutions for Microsoft Azure\04\Starter\AdventureWorks\AdventureWorks.Models\bin\Debug\netstandard2.1\AdventureWorks.Models.dll
+C:\Git\AZ-204T00-A Developing Solutions for Microsoft Azure\04\Starter\AdventureWorks\AdventureWorks.Models\bin\Debug\netstandard2.1\AdventureWorks.Models.pdb
+C:\Git\AZ-204T00-A Developing Solutions for Microsoft Azure\04\Starter\AdventureWorks\AdventureWorks.Models\obj\Debug\netstandard2.1\AdventureWorks.Models.csproj.AssemblyReference.cache
+C:\Git\AZ-204T00-A Developing Solutions for Microsoft Azure\04\Starter\AdventureWorks\AdventureWorks.Models\obj\Debug\netstandard2.1\AdventureWorks.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\AZ-204T00-A Developing Solutions for Microsoft Azure\04\Starter\AdventureWorks\AdventureWorks.Models\obj\Debug\netstandard2.1\AdventureWorks.Models.AssemblyInfoInputs.cache
+C:\Git\AZ-204T00-A Developing Solutions for Microsoft Azure\04\Starter\AdventureWorks\AdventureWorks.Models\obj\Debug\netstandard2.1\AdventureWorks.Models.AssemblyInfo.cs
+C:\Git\AZ-204T00-A Developing Solutions for Microsoft Azure\04\Starter\AdventureWorks\AdventureWorks.Models\obj\Debug\netstandard2.1\AdventureWorks.Models.csproj.CoreCompileInputs.cache
+C:\Git\AZ-204T00-A Developing Solutions for Microsoft Azure\04\Starter\AdventureWorks\AdventureWorks.Models\obj\Debug\netstandard2.1\AdventureWorks.Models.dll
+C:\Git\AZ-204T00-A Developing Solutions for Microsoft Azure\04\Starter\AdventureWorks\AdventureWorks.Models\obj\Debug\netstandard2.1\AdventureWorks.Models.pdb

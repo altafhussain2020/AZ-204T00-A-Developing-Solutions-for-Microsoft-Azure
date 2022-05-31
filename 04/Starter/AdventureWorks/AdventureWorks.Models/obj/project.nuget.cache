@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/GoQ2dLZUxYAjoqRwR3dqrph1/oK6kxXd9Z5Njo4836T2sYXxnH5srx49aqEJ8/tMs1yRKs3XyVW16l2FLtTwA==",
+  "success": true,
+  "projectFilePath": "C:\\Git\\AZ-204T00-A Developing Solutions for Microsoft Azure\\04\\Starter\\AdventureWorks\\AdventureWorks.Models\\AdventureWorks.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jasmine-Altaf PC\\.nuget\\packages\\system.componentmodel.annotations\\4.6.0\\system.componentmodel.annotations.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
