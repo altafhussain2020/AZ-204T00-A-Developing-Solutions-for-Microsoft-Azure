@@ -1,0 +1,14 @@
+9fa484e8-481e-40f5-8ea2-71583a1a757a
+
+
+0eb3919e-9654-40bc-a153-fcb62c867bca
+QatarNationalBank416.onmicrosoft.com
+
+aad_lab_user1@QatarNationalBank416.onmicrosoft.com
+
+dotnet new mvc --auth SingleOrg --client-id 9fa484e8-481e-40f5-8ea2-71583a1a757a --tenant-id 0eb3919e-9654-40bc-a153-fcb62c867bca --domain QatarNationalBank416.onmicrosoft.com
+
+
+
+Import-Module AzureAD.Standard.Preview
+AzureAD.Standard.Preview\Connect-AzureAD -TenantID '0eb3919e-9654-40bc-a153-fcb62c867bca'
